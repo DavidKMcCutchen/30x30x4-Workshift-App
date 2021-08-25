@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@work-schedule/api-interfaces';
 
 @Component({
   selector: 'work-schedule-root',
@@ -8,6 +6,9 @@ import { Message } from '@work-schedule/api-interfaces';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
-  constructor(private http: HttpClient) {}
+  title = 'Work Shifts';
+  links = [
+    {path: '', icon: 'home', title: 'Home'},
+    {path: 'shifts', icon: 'view_list', title: 'Shifts'}
+  ] 
 }

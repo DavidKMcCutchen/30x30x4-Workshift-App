@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="col-50" layout="row" layout-align="center center">
+      <work-schedule-shift-list
+        [shifts]="shifts$ | async"
+        (selected)="selectedShift($event)"
+        (deleted)="deleteShift($event)"
+      ></work-schedule-shift-list>
+    </div>
+    <div class="col-50" layout="row" layout-align="center center">
+      <work-schedule-shift-details
+        [form]="form"
+        [shift]="selectedShift$ | async"
+        (save)="saveShift($event)"
+        (cancelled)="cancel()"
+      ></work-schedule-shift-details>
+    </div>
+  </div>

@@ -1,0 +1,11 @@
+{
+    "shifts": [
+        {
+        "id": 1,
+        "title": "McDonalds Closing Shift",
+        "time": "1800-0030",
+        "date": "August 30, 2021",
+        "specialPay": false
+        }
+    ]
+}
