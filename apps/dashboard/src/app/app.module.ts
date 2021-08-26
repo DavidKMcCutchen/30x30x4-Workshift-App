@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { EnvironmentModule } from '@work-schedule/environment'
+import { EnvironmentModule } from '@work-schedule/environment';
 import { environment } from '../environments/environment';
 import { CoreDataModule } from "@work-schedule/core-data";
 import { CoreStateModule } from "@work-schedule/core-state";
